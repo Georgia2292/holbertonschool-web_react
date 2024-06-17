@@ -1,40 +1,47 @@
-:root {
-	--primary-color: #E11D3F;
-	font: 18px Helvetica, Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.App {
-	background-color: #ffffff;
-	display: flex;
-	flex-direction: column;
+:root {
+  --holb-red: #FF0000;
 }
 
 .App-header {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	color: var(--primary-color);
-	border-bottom: 3px solid var(--primary-color);
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  border-bottom: 4px solid var(--holb-red);
 }
 
-.App-logo {
-	height: 200px;
-	width: 200px;
+.App-header h1 {
+  max-width: fit-content;
+  color: var(--holb-red);
 }
+
+/* App-body */
 
 .App-body {
-	display: flex;
-	flex-direction: column;
-	margin: 3rem;
-	min-height: 50vh;
+  min-height: 60vmin;
+  padding: 32px;
 }
 
+.App-body p {
+  font-weight: bold;
+}
+
+/* App-footer */
+
 .App-footer {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	border-top: 3px solid var(--primary-color);
-	padding: 1rem;
-	font-style: italic;
+  font-style: italic;
+  border-top: 4px solid var(--holb-red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 5vmin;
 }
