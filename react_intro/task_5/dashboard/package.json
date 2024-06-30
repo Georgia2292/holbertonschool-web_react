@@ -1,4 +1,5 @@
-me": "task_5",
+{
+  "name": "task_5",
   "version": "1.0.0",
   "description": "task 5 of 0x02-react intro",
   "main": "./src/index.js",
