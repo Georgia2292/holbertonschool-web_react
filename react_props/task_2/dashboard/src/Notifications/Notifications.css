@@ -1,16 +1,25 @@
-:root {
-	--primar-color: #E11D3F;
-}
-
 .Notifications {
-	border: 1px solid var(--primar-color);
-	padding: 1rem;
+    border: 2px dashed var(--holb-red);
+    padding: 24px;
 }
 
-[data-notification-type="default"] {
-	color: blue;
+.Notifications ul {
+    list-style-type: none;
 }
 
-[data-notification-type="urgent"] {
-	color: red;
+.Notifications ul li {
+    list-style-type: disc;
+}
+
+.Notifications ul li[data-priority="default"] {
+    color: blue;
+}
+
+.Notifications ul li[data-priority="urgent"] {
+    color: red;
+}
+
+.Notifications ul li:nth-last-child(1) {
+    color: red;
+    font-size: 18px;
 }
