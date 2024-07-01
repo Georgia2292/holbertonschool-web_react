@@ -8,8 +8,8 @@ export default class App extends Component {
 	render() {
 		return (
 			<React.Fragment>
+				<Notifications />
 				<div className="App">
-					<Notifications />
 					<Header />
 					<div className="App-body">
 						<Login />
